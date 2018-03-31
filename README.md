@@ -24,7 +24,7 @@ The CLI will available globally via command line as `coronakit`.
 
   - Create a new plugin project directory on your system.
   - Point your commnand line program at the new plugin directory.
-  - On the command line run `coronakit init ...` (see [init](#init) below).
+  - On the command line run `coronakit init <args>` (see [init](#init) below).
 
 ### JavaScript
 
