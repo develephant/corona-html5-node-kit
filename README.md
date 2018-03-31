@@ -77,6 +77,14 @@ Initialize a new _Corona HTML5 Node Kit_ framework.
 coronakit init --app DemoApp --plugin myplugin --id com.me
 ```
 
+__Arguments__
+
+|Name|Description|Required|
+|----|-----------|--------|
+|`--app`|desc|__Y__|
+|`--plugin`|desc|__Y__|
+|`--id`|desc|__Y__|
+
 ### compile
 
 Compile the JS sources to plugin form.
