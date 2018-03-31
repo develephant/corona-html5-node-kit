@@ -109,6 +109,10 @@ Start a live browser session with your debug demo build.
 coronakit debug
 ```
 
+## Support
+
+Visit the __[Corona HTML5 Forums](https://forums.coronalabs.com/forum/637-html5/)__ for help and discussions.
+
 ---
 
 &copy;2018 C.Byerley ([develephant](https://develephant.com))
