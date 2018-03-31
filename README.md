@@ -26,7 +26,7 @@ The "Kit" is geared toward developers who have a background in writing Modern Ja
 
 The "Kit" has been setup to compile down to ES5 against the most used versions of browser engines ___that will work with Corona HTML5 projects___*.
 
-The currently supported compilation targets are:
+The current compilation targets are:
 
  - IE (11)
  - Edge (16)
