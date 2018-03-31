@@ -20,6 +20,21 @@ The CLI will available globally via command line as `coronakit`.
 
 ## Workflow
 
+### Initialzation
+
+  - Create a new plugin project directory on your system.
+  - Point your commnand line program at the new plugin directory.
+  - On the command line run `coronakit init ...` (see [init](#init) below).
+
+### JavaScript
+
+  - Work on your JavaScript in the __js_plugin_src__ directory.
+  - Compile when needed using `coronakit compile` (see [compile](#compile) below).
+
+### Build Plugin
+
+  - When you are ready to build the plugin use `coronakit build` (see [build](#build) below).
+
 ## CLI Commands
 
 ### init
