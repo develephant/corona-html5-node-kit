@@ -82,7 +82,7 @@ __Arguments__
 |Name|Description|Required|
 |----|-----------|--------|
 |`--app`|Name of the demo application that will be created to test your plugin.|__Y__|
-|`--plugin`|Name of the plugin. Alpha-numeric, no spaces, no dashes.|__Y__|
+|`--plugin`|Name of the plugin. Lowercase alpha-numeric, no spaces, no dashes.|__Y__|
 |`--id`|Your plugin _publisherId_ in reverse domain form (EX: com.develephant)|__Y__|
 
 ### compile
