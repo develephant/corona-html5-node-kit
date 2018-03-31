@@ -24,7 +24,7 @@ As a developer, you also have access to the __[npm](https://npm.org)__ package l
 
 The "Kit" is geared toward developers who have a background in writing modern JavaScript, and working with NodeJS in particular.
 
-The "Kit" has been setup to compile down to ES5 against the most used versions of browser engines ___that will work with Corona HTML5 projects___*.
+The "Kit" has been setup to compile your plugin source down to ES5 against the most used versions of browser engines ___that will work with Corona HTML5 projects___*.
 
 The current compilation targets are:
 
