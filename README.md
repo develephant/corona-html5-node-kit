@@ -28,12 +28,15 @@ The CLI will available globally via command line as `coronakit`.
 
 ### JavaScript
 
-  - Work on your JavaScript in the __js_plugin_src__ directory.
+  - Work on your JavaScript in the __js_plugin_src__ directory in the project directory.
   - Compile when needed using `coronakit compile` (see [compile](#compile) below).
+  - Compiled JS is output to your demo project directory and the __output_plugin__ directory.
 
 ### Build Plugin
 
   - When you are ready to build the plugin use `coronakit build` (see [build](#build) below).
+  - The build output will be added to the __output_html/<project\>__ directory.
+  - Upload the __output_html/<project\>__ files or start a [watch](#watch)/[debug](#debug) session.
 
 ### Watch / Debug
 
