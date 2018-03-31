@@ -1,6 +1,6 @@
 # Corona HTML5 Node Kit
 
-___Build Corona HTML5 plugins using NodeJS, NPM, and Modern Javascript.___
+___Build Corona HTML5 plugins using NodeJS, NPM, and Modern JavaScript.___
 
 ## Installation
 
@@ -18,13 +18,13 @@ The CLI will available globally via command line as `coronakit`.
 
 ## Overview
 
-The _Corona HTML5 Node Kit_ is a framework for creating [Corona HTML5]() plugins using NodeJS and Modern Javascript. 
+The _Corona HTML5 Node Kit_ is a framework for creating [Corona HTML5](https://coronalabs.com) plugins using NodeJS and Modern JavaScript (ES6). 
 
-As a developer, you also have access to the __npm__ package library that can be used in your plugin development.
+As a developer, you also have access to the __[npm](https://npm.org)__ package library that can be used in your plugin development.
 
 The "Kit" is geared toward developers who have a background in writing Modern JavaScript, and working with NodeJS in particular.
 
-The "Kit" has been setup to compile down to ES5 against the most used versions of browser engines _that will work with Corona HTML5 projects_*.
+The "Kit" has been setup to compile down to ES5 against the most used versions of browser engines ___that will work with Corona HTML5 projects___*.
 
 The currently supported compilation targets are:
 
@@ -37,7 +37,7 @@ The currently supported compilation targets are:
  - iOS Safari (11)
  - Chrome Android (64)
 
-<small>* _Targets are determined from [this chart](https://caniuse.com/#search=webgl), under the "Usage relative" section._</small>
+* _Targets are determined from [this chart](https://caniuse.com/#search=webgl), under the "Usage relative" section._
 
 ## Workflow
 
