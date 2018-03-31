@@ -85,6 +85,12 @@ __Arguments__
 |`--plugin`|Name of the plugin. Lowercase alpha-numeric, no spaces, no dashes.|__Y__|
 |`--id`|Your plugin _publisherId_ in reverse domain form (EX: com.develephant)|__Y__|
 
+__Example__
+
+```
+coronakit init --app FortuneCookie --plugin fortune --id com.develephant
+```
+
 ### compile
 
 Compile the JS sources to plugin form.
