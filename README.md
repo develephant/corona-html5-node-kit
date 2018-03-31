@@ -65,7 +65,9 @@ The current compilation targets are:
   - Point your commnand line program at the plugin directory.
   - On the command line run `coronakit debug` (see [debug](#debug) below).
   - A browser _debug_ session will start and automatically update on each [build](#build)
-  - Use your original command line session to issue [compile](#compile) and [build](#build) commands.
+
+
+From this point on, use your original command line session to issue [compile](#compile) and [build](#build) commands as you work on your plugin.
 
 ## CLI Commands
 
