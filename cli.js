@@ -43,7 +43,7 @@ parser.addArgument('--id',
 {help: 'The html output directory.',
 metavar: 'HTML_DIR'})
 
-const args = parser.parseArgs()
+let args = parser.parseArgs()
 
 switch(args.action) {
   case 'init':
