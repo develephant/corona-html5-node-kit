@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/develephant/corona-html5-node-kit#readme",
   "engines": {
-    "node": ">=8.0.0"
+    "node": ">=6.0.0"
   },
   "directories": {
     "doc": "docs"
