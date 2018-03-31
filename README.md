@@ -20,7 +20,7 @@ The CLI will available globally via command line as `coronakit`.
 
 ## Workflow
 
-### Initialzation
+### Initialization
 
   - Create a new plugin project directory on your system.
   - Point your commnand line program at the new plugin directory.
@@ -34,6 +34,14 @@ The CLI will available globally via command line as `coronakit`.
 ### Build Plugin
 
   - When you are ready to build the plugin use `coronakit build` (see [build](#build) below).
+
+### Watch / Debug
+
+  - After your first [build](#build) open a new command line session.
+  - Point your commnand line program at the plugin directory.
+  - On the command line run `coronakit debug` (see [debug](#debug) below).
+  - A browser session will start and automatically update on each [build](#build)
+  - Use your original command line session to issue [compile](#compile) and [build](#build) commands.
 
 ## CLI Commands
 
