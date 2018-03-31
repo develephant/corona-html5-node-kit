@@ -1,5 +1,5 @@
 {
-  "name": "corona-html5-node-kit",
+  "name": "@develephant/corona-html5-node-kit",
   "version": "0.1.0",
   "description": "Build Corona HTML5 plugins using NodeJS, NPM, and modern JavaScript.",
   "preferGlobal": true,
@@ -20,17 +20,14 @@
     "games",
     "applications"
   ],
-  "author": "C. Byerley",
+  "author": "develephant <code@develephant.com> (http://www.develephant.com/)",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/develephant/corona-html5-node-kit/issues"
   },
-  "homepage": "https://github.com/develephant/corona-html5-node-kit#readme",
+  "homepage": "https://develephant.github.io/corona-html5-node-kit-docs/",
   "engines": {
     "node": ">=6.0.0"
-  },
-  "directories": {
-    "doc": "docs"
   },
   "dependencies": {
     "argparse": "^1.0.10",
