@@ -24,7 +24,7 @@ As a developer, you also have access to the __npm__ package library that can be 
 
 The "Kit" is geared toward developers who have a background in writing Modern JavaScript, and working with NodeJS in particular.
 
-The "Kit" has been setup to compile down to ES5 against the most used versions of browser engines that will _work with Corona HTML5 projects_. The JS compilation is determined from [this chart](https://caniuse.com/#search=webgl), under the "Usage relative" section. The most used versions are the compilation targets.
+The "Kit" has been setup to compile down to ES5 against the most used versions of browser engines _that will work with Corona HTML5 projects_*.
 
 The currently supported compilation targets are:
 
@@ -36,6 +36,8 @@ The currently supported compilation targets are:
  - Opera (50)
  - iOS Safari (11)
  - Chrome Android (64)
+
+<small>* _Targets are determined from [this chart](https://caniuse.com/#search=webgl), under the "Usage relative" section._</small>
 
 ## Workflow
 
