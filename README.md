@@ -93,7 +93,7 @@ coronakit init --app FortuneCookie --plugin fortune --id com.develephant
 
 ### compile
 
-Compile the JS sources to plugin form.
+Compile the JS sources to plugin form. Compiled JS is output to your demo project directory and the __output_plugin__ directory.
 
 ```
 coronakit compile
@@ -101,7 +101,7 @@ coronakit compile
 
 ### build
 
-Generate an HTML5 build of your demo project.
+Generate an HTML5 build of your demo project. Build output will be added to the __output_html/<project\>__ directory.
 
 ```
 coronakit build
