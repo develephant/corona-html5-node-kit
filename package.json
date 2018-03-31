@@ -1,0 +1,49 @@
+{
+  "name": "corona-html5-node-kit",
+  "version": "0.1.0",
+  "description": "Build Corona HTML5 plugins using NodeJS, NPM, and Modern Javascript.",
+  "preferGlobal": true,
+  "bin": {
+    "coronakit": "cli.js"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/develephant/corona-html5-node-kit.git"
+  },
+  "keywords": [
+    "corona",
+    "coronasdk",
+    "html5",
+    "es6",
+    "plugins",
+    "games",
+    "applications"
+  ],
+  "author": "C. Byerley",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/develephant/corona-html5-node-kit/issues"
+  },
+  "homepage": "https://github.com/develephant/corona-html5-node-kit#readme",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "argparse": "^1.0.10",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-minify": "^0.3.0",
+    "babelify": "^8.0.0",
+    "browser-sync": "^2.23.6",
+    "browserify": "^16.1.1",
+    "colors": "^1.2.1",
+    "luaparse": "^0.2.1",
+    "read-file": "^0.2.0",
+    "shelljs": "^0.8.1",
+    "uglify-es": "^3.3.9"
+  }
+}

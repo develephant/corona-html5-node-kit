@@ -1,0 +1,12 @@
+{
+  "name": "APPNAME",
+  "version": "1.0.0",
+  "description": "APPNAME",
+  "scripts": {},
+  "author": "me",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-minify": "^0.3.0"
+  }
+}
