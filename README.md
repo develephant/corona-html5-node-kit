@@ -74,7 +74,7 @@ The current compilation targets are:
 Initialize a new _Corona HTML5 Node Kit_ framework.
 
 ```
-coronakit init --app DemoApp --plugin myplugin --id com.me
+coronakit init --app <DemoAppName> --plugin <myplugin> --id <com.me>
 ```
 
 __Arguments__
