@@ -8,9 +8,11 @@ __Build Corona HTML5 plugins using NodeJS, NPM, and Modern Javascript.__
 
 Install __[NodeJS](https://nodejs.org)__ version 8 or better for _macOS_ or _Windows_.
 
-### Download Kit
+### Install the Kit
 
-Download the _Corona HTML5 Node Kit_ by __[clicking here](https://github.com/develephant/corona-html5-node-kit/archive/master.zip)__.
+```
+npm install -g @develephant/corona-html5-node-kit
+```
 
 ## Overview
 
