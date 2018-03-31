@@ -18,7 +18,7 @@ The CLI will available globally via command line as `coronakit`.
 
 ## Overview
 
-The _Corona HTML5 Node Kit_ is a framework for creating [Corona HTML5](https://coronalabs.com) plugins using NodeJS and Modern JavaScript (ES6). 
+The _Corona HTML5 Node Kit_ is a framework for creating [Corona HTML5](https://coronalabs.com) plugins using NodeJS stylings and Modern JavaScript (ES6). 
 
 As a developer, you also have access to the __[npm](https://npm.org)__ package library that can be used in your plugin development.
 
