@@ -1,7 +1,7 @@
 {
   "name": "corona-html5-node-kit",
   "version": "0.1.0",
-  "description": "Build Corona HTML5 plugins using NodeJS, NPM, and Modern Javascript.",
+  "description": "Build Corona HTML5 plugins using NodeJS, NPM, and modern JavaScript.",
   "preferGlobal": true,
   "bin": {
     "coronakit": "cli.js"
@@ -42,7 +42,6 @@
     "browserify": "^16.1.1",
     "colors": "^1.2.1",
     "luaparse": "^0.2.1",
-    "read-file": "^0.2.0",
     "shelljs": "^0.8.1",
     "uglify-es": "^3.3.9"
   }
