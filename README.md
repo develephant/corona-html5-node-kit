@@ -18,6 +18,25 @@ The CLI will available globally via command line as `coronakit`.
 
 ## Overview
 
+The _Corona HTML5 Node Kit_ is a framework for creating [Corona HTML5]() plugins using NodeJS and Modern Javascript. 
+
+As a developer, you also have access to the __npm__ package library that can be used in your plugin development.
+
+The "Kit" is geared toward developers who have a background in writing Modern JavaScript, and working with NodeJS in particular.
+
+The "Kit" has been setup to compile down to ES5 against the most used versions of browser engines that will _work with Corona HTML5 projects_. The JS compilation is determined from [this chart](https://caniuse.com/#search=webgl), under the "Usage relative" section. The most used versions are the compilation targets.
+
+The currently supported compilation targets are:
+
+ - IE (11)
+ - Edge (16)
+ - Firefox (58)
+ - Chrome (65)
+ - Safari (11.2)
+ - Opera (50)
+ - iOS Safari (11)
+ - Chrome Android (64)
+
 ## Workflow
 
 ### Initialization
@@ -43,7 +62,7 @@ The CLI will available globally via command line as `coronakit`.
   - After your first [build](#build) open a new command line session.
   - Point your commnand line program at the plugin directory.
   - On the command line run `coronakit debug` (see [debug](#debug) below).
-  - A browser session will start and automatically update on each [build](#build)
+  - A browser _debug_ session will start and automatically update on each [build](#build)
   - Use your original command line session to issue [compile](#compile) and [build](#build) commands.
 
 ## CLI Commands
