@@ -1,0 +1,1 @@
+See [https://develephant.github.io/corona-html5-node-kit-docs/](https://develephant.github.io/corona-html5-node-kit-docs/) for full usage documentation.
