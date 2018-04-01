@@ -1,5 +1,5 @@
 --#############################################################################
---# Corona HTML5 ES6 Starter
+--# Corona HTML5 Node Kit - Plugin Builder
 --# (c)2018 C. Byerley (develephant)
 --#############################################################################
 local myplugin = require("myplugin")

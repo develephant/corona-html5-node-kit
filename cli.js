@@ -1,7 +1,8 @@
 #! /usr/bin/env node
 
 //-----------------------------------------------------------------------------
-// Corona HTML5 ES6 Plugin CLI
+// Corona HTML5 Node Kit - Plugin Builder
+// (c)2018 C. Byerley (develephant)
 //-----------------------------------------------------------------------------
 const core = require('./lib/core')
 const compile = require('./lib/compile')
