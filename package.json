@@ -1,6 +1,6 @@
 {
   "name": "@develephant/corona-html5-node-kit",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Build Corona HTML5 plugins using NodeJS, NPM, and modern JavaScript.",
   "preferGlobal": true,
   "bin": {
