@@ -15,38 +15,91 @@ const ArgParser = require('argparse').ArgumentParser
 const { pp } = require("./lib/clr")
 
 const parser = new ArgParser({
-  description: "Corona HTML5 Watcher",
+  description: "Corona HTML5 Node Kit",
   version: pkg.version,
   allowAbbrev: false,
   epilog: '(c)2018 C. Byerley [develephant]'
 })
 
-parser.addArgument('action', {
-  help: "Corona HTML5 Watcher",
-  choices: [
-    'init',
-    'compile',
-    'build',
-    'watch',
-    'debug'
-  ]
+let subparsers = parser.addSubparsers({
+  title: "commands",
+  dest: "action",
+  addHelp: true,
+  help: "Use {command} -h for argument details."
 })
 
-parser.addArgument('--app',
-{help: 'The application name.',
-metavar: 'APP_NAME'})
+let init_parser = subparsers.addParser('init', {
+  help: "Initialize a new Corona HTML5 Node Kit project.",
+})
+init_parser.addArgument('--app', {
+  action: 'store',
+  help: "Name of the demo application to test your plugin.",
+  required: true,
+  metavar: "APP_NAME"
+})
 
-parser.addArgument('--plugin',
-{help: 'The application name.',
-metavar: 'PLUGIN'})
+init_parser.addArgument('--plugin', {
+  action: 'store',
+  help: "Full path to the HTML5 output directory.",
+  required: true,
+  metavar: "PLUGIN_NAME"
+})
 
-parser.addArgument('--id',
-{help: 'The html output directory.',
-metavar: 'HTML_DIR'})
+init_parser.addArgument('--id', {
+  action: 'store',
+  help: "Plugin publisherId in reverse domain form.",
+  required: true,
+  metavar: "PUBLISHER_ID"
+})
 
-parser.addArgument('--proxy',
-{help: 'Proxy address. For watch and debug command.',
-metavar: 'PROXY_ADDR'})
+let compile_parser = subparsers.addParser('compile', { 
+  help: "Compile the JS sources to plugin format.",
+})
+
+let build_parser = subparsers.addParser('build', { 
+  help: "Build the Corona HTML5 demo project output."
+})
+
+let watch_parser = subparsers.addParser('watch', {
+  help: "Start a live browser session of the project."
+})
+watch_parser.addArgument(['-d', '--debug'], {
+  action: 'storeTrue',
+  help: "Open as debug session (index-debug.html).",
+  defaultValue: false
+})
+watch_parser.addArgument('--proxy', {
+  action: 'store',
+  help: "A proxy address for the session.",
+  metavar: "PROXY_ADDR"
+})
+
+// parser.addArgument('action', {
+//   help: "Corona HTML5 Watcher",
+//   choices: [
+//     'init',
+//     'compile',
+//     'build',
+//     'watch',
+//     'debug'
+//   ]
+// })
+
+// parser.addArgument('--app',
+// {help: 'The application name.',
+// metavar: 'APP_NAME'})
+
+// parser.addArgument('--plugin',
+// {help: 'The application name.',
+// metavar: 'PLUGIN'})
+
+// parser.addArgument('--id',
+// {help: 'The html output directory.',
+// metavar: 'HTML_DIR'})
+
+// parser.addArgument('--proxy',
+// {help: 'Proxy address. For watch and debug command.',
+// metavar: 'PROXY_ADDR'})
 
 let args = parser.parseArgs()
 
@@ -64,9 +117,6 @@ switch(args.action) {
     build()
     break
   case 'watch':
-    watch(false, args.proxy)
-    break
-  case 'debug':
-    watch(true, args.proxy)
+    watch(args.debug, args.proxy)
     break
 }
