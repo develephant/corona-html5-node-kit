@@ -59,6 +59,11 @@ let compile_parser = subparsers.addParser('compile', {
 let build_parser = subparsers.addParser('build', { 
   help: "Build the Corona HTML5 demo project output."
 })
+build_parser.addArgument('--clean', {
+  action: 'storeTrue',
+  help: "Clean the HTML5 output directory before build.",
+  defaultValue: false
+})
 
 let watch_parser = subparsers.addParser('watch', {
   help: "Start a live browser session of the project."
@@ -74,33 +79,6 @@ watch_parser.addArgument('--proxy', {
   metavar: "PROXY_ADDR"
 })
 
-// parser.addArgument('action', {
-//   help: "Corona HTML5 Watcher",
-//   choices: [
-//     'init',
-//     'compile',
-//     'build',
-//     'watch',
-//     'debug'
-//   ]
-// })
-
-// parser.addArgument('--app',
-// {help: 'The application name.',
-// metavar: 'APP_NAME'})
-
-// parser.addArgument('--plugin',
-// {help: 'The application name.',
-// metavar: 'PLUGIN'})
-
-// parser.addArgument('--id',
-// {help: 'The html output directory.',
-// metavar: 'HTML_DIR'})
-
-// parser.addArgument('--proxy',
-// {help: 'Proxy address. For watch and debug command.',
-// metavar: 'PROXY_ADDR'})
-
 let args = parser.parseArgs()
 
 switch(args.action) {
@@ -114,7 +92,7 @@ switch(args.action) {
     compile()
     break
   case 'build':
-    build()
+    build(args.clean)
     break
   case 'watch':
     watch(args.debug, args.proxy)
