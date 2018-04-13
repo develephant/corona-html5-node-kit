@@ -84,6 +84,10 @@ let pack_parser = subparsers.addParser('pack', {
   help: "Pack the demo and plugin for distribution."
 })
 
+let make_parser = subparsers.addParser('make', {
+  help: "Compile JS and Build the demo plugin project."
+})
+
 let args = parser.parseArgs()
 
 switch(args.action) {
@@ -98,6 +102,9 @@ switch(args.action) {
     break
   case 'build':
     build(args.clean)
+    break
+  case 'make':
+    compile(true)
     break
   case 'watch':
     watch(args.debug, args.proxy)
