@@ -30,6 +30,7 @@
     "node": ">=8.0.0"
   },
   "dependencies": {
+    "archiver": "^2.1.1",
     "argparse": "^1.0.10",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
@@ -41,5 +42,6 @@
     "luaparse": "^0.2.1",
     "shelljs": "^0.8.1",
     "uglify-es": "^3.3.9"
-  }
+  },
+  "devDependencies": {}
 }

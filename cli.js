@@ -8,6 +8,7 @@ const core = require('./lib/core')
 const compile = require('./lib/compile')
 const build = require('./lib/build')
 const watch = require('./lib/watch')
+const pack = require('./lib/archives')
 
 const pkg = require('./package')
 const ArgParser = require('argparse').ArgumentParser
@@ -79,6 +80,10 @@ watch_parser.addArgument('--proxy', {
   metavar: "PROXY_ADDR"
 })
 
+let pack_parser = subparsers.addParser('pack', {
+  help: "Pack the demo and plugin for distribution."
+})
+
 let args = parser.parseArgs()
 
 switch(args.action) {
@@ -96,5 +101,8 @@ switch(args.action) {
     break
   case 'watch':
     watch(args.debug, args.proxy)
+    break
+  case 'pack':
+    pack()
     break
 }
