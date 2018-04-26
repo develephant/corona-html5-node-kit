@@ -41,7 +41,7 @@ init_parser.addArgument('--app', {
 
 init_parser.addArgument('--plugin', {
   action: 'store',
-  help: "Full path to the HTML5 output directory.",
+  help: "Plugin name. Lowercase, alpha-numeric, no spaces.",
   required: true,
   metavar: "PLUGIN_NAME"
 })
